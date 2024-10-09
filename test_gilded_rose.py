@@ -12,7 +12,7 @@ class GildedRoseTest(unittest.TestCase):
         self.assertEqual("foo", items[0].name)
 
     def test_aged_brie_increases_in_quality(self):
-        items = [Item("Aged Brie", 2, 0)]
+        items = [Item("Aged Brie", 2, 0)] 
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
         self.assertEqual(1, items[0].quality)
